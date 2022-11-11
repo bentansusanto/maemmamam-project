@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/maemmamam.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Maem Mamam</title>
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bg: '#100E0B',
+                text : '#FF9900'
+              },
+              fontFamily : {
+                content : ['Poppins','sans-serif'],
+                button : ['Inter', 'sans-serif']
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="overflow-x-hidden bg-bg scroll-smooth">
+    <!-- Navbar -->
+    
+    <nav class="md:px-10 lg:px-32 px-8 py-5 flex items-center relative">
+        <div class="flex lg:space-x-20 md:space-x-10 items-center">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="home.html" class="navbrand flex space-x-3 text-white items-center">
+                    <img src="./assets/maemmamam.svg" alt="">
+                    <h4 class="font-content font-bold">MaemMamam</h4>
+                </a>
+            </div>
+
+            <!-- Toggle Nav -->
+            <div id="toggle" class="text-white text-[2rem] md:hidden absolute right-10 mt-2">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </div>
+            <!-- Navigation Item -->
+            <ul id="sidebar" class="md:flex md:space-x-10 space-x-0 md:space-y-0 space-y-8 text-white md:items-center md:z-auto z-10 md:static absolute md:bg-transparent bg-white/20 backdrop-blur-md w-full md:h-0 md:w-auto md:py-0 py-10 md:text-[.9rem] text-[1.2rem] md:pl-0 px-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 left-0">
+                <li>
+                    <a href="home.html" class=" hover:text-text hover:font-medium">
+                        Home
+                    </a>
+                </li>
+                <li >
+                    <a href="about.html" class="hover:text-text hover:font-medium">
+                        About
+                    </a>
+                </li>
+                <li >
+                    <a href="comunity.html" class="hover:text-text hover:font-medium">
+                        Comunity
+                    </a>
+                </li>
+                <div class="login-mobile md:hidden block space-y-4 pt-5">
+                    <button class="login flex border px-10 py-2.5 rounded-[50px] space-x-3 text-white ">
+                        <a href="#" class="font-button text-[.9rem] text-center">Login</a>
+                    </button>
+                    <button href="#" class="login flex bg-text px-10 py-2.5 rounded-[50px] space-x-3 text-white ">
+                        <a href="#" class="font-button text-[.9rem] text-center">Register</a>
+                    </button>
+                    
+                </div>
+            </ul>
+        </div>
+
+        <div class="ml-auto md:flex items-center space-x-10">
+            <a href="#" class="cart flex text-white md:mr-0 mr-[5rem]">
+                <img src="./assets/cart.svg" alt="" class="w-5">
+                <span class="absolute ml-2 -mt-2 rounded-full bg-red-600 text-[.7rem] p-1 m-0 text-white font-content leading-tight text-center">10</span>
+            </a>
+            <a href="#" class="login md:flex hidden items-center space-x-3 text-white">
+                <p class="font-button text-[.9rem]">Login</p>
+                <img src="./assets/login-icon.svg" alt="">
+            </a>
+            <a href="#" class="register md:flex hidden bg-text px-6 py-2.5 text-button text-[.9rem] text-white rounded-[50px]">
+                Register
+            </a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="circle overflow-x-hidden mb-20">
+        <div class="bg-[#FFE6001A] opacity-[95%] w-[22rem] h-[22rem] blur-lg rounded-full absolute top-[-8rem] left-[-8rem]"></div>
+    </div>
+    
+    <!-- AboutSection -->
+    <div class="about-section text-white font-content lg:mx-32 md:mx-10 mx-8 mb-40 md:flex md:flex-row-reverse block items-center">
+        <img src="./assets/bg-about.svg" alt="" class="lg:mr-[10rem] md:w-[50%] lg:[70%] w-auto mx-auto md:mx-0">
+        <div class="content md:pt-0 pt-20">
+            <h4 class="text-text">About Us</h4>
+            <h2 class="text-[2.5rem] font-bold pb-4">MaemMamam</h2>
+            <p class="text-[#dddddd] text-[.9rem] pb-5 md:w-[90%] w-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis aliquid non sunt harum iusto quidem? Adipisci vero, reprehenderit magnam laboriosam, corrupti sapiente excepturi eaque ullam ex nam earum amet!</p>
+            <button href="#" class="register border-white border px-4 mt-2 py-2.5 text-button text-[.9rem] text-white rounded-[50px] items-center flex space-x-2">
+                <a href="#">Read More</a>
+                <ion-icon name="arrow-forward-outline" class="text-lg"></ion-icon>
+            </button> 
+        </div>
+    </div>
+
+    <!-- <div class="bg-[#FFE6001A] opacity-[90%] w-[28rem] h-[28rem] blur-xl rounded-full absolute mt-14 left-[-10rem]"></div> -->
+    <!-- EndHeroSection -->
+ 
+    <!-- Company Trusted -->
+    <div class="company-trusted text-white mb-40">
+        <h1 class="text-center mb-10">Trusted Companies Woldwide</h1>
+        <div class="company-icon grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 justify-items-center gap-5 lg:mx-32 md:mx-10 mx-8">
+            <img src="./assets/bukalapak.svg" alt="">
+            <img src="./assets/shoope.svg" alt="">
+            <img src="./assets/gojek.svg" alt="">
+            <img src="./assets/grab.svg" alt="">
+            <img src="./assets/bukalapak.svg" alt="">
+            <img src="./assets/gojek.svg" alt="">   
+        </div>
+    </div>
+    <!-- End Company Trusted -->
+
+    <!-- Footer -->
+    <div class="footer lg:mx-32 md:mx-10 mx-8 text-white mb-10">
+        <div class="logo-footer flex items-center space-x-3">
+            <img src="./assets/maemmamam.svg" alt="">
+            <h4 class="font-content font-bold">MaemMamam</h4>
+        </div>
+        <div class="lg:flex block mt-10">
+            <div class="about-footer">
+                <p class="text-[.9rem] w-[70%]">We were founded in 1948 after the war and the world began to be safe we decided to open a small restaurant on the side of the road for the youth and the surrounding community.</p>
+                <div class="icon-social flex space-x-6 mt-6">
+                    <a href="">
+                        <img src="./assets/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/linkedin.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/instagram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 grid-cols-2 md:gap-x-5 md:gap-y-0 gap-y-10 lg:mt-0 mt-10 lg:ml-[-3rem]">
+                <!-- navigation -->
+                <div class="space-y-5">
+                    <h4 class="text-[1.2rem] font-semibold">Navigation</h4>
+                    <li class="text-[#969696] text-[.9rem] list-none">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="text-[#969696] text-[.9rem] list-none">
+                        <a href="#">Info</a>
+                    </li>
+                    <li class="text-[#969696] text-[.9rem] list-none">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="text-[#969696] text-[.9rem] list-none">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="text-[#969696] text-[.9rem] list-none">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </div>
+
+                <!-- Address -->
+                <div class="space-y-5">
+                    <h4 class="text-[1.2rem] font-semibold">Address</h4>
+                    <p class="text-[#969696] text-[.9rem]">Jl. Al-Muwahhiddin, Karangtengah, Cibadak, Kab. Sukabumi.
+                        Sukabumi 43351</p>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="space-y-5">
+                    <h4 class="text-[1.2rem] font-semibold">Contact Us</h4>
+                    <div class="flex items-center space-x-3">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <p class="text-[#969696] text-[.9rem]">(0266) 532510</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <p class="text-[#969696] text-[.9rem]">smkn1_cibadak@yahoo.co.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-14">
+            <p class="text-center">&copy; MaemMamam, 2022</p>
+        </footer>
+    </div>
+    <!-- End Footer -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="./data/apiMenu.js"></script>
+<!-- <script src="index.js"></script> -->
+<script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+</html>
